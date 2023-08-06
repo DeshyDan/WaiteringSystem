@@ -14,13 +14,8 @@ namespace WaiteringSystem
         private string phone;
         #endregion
         #region Constructor
-        public Person(string ID, string name, string phone)
-        {
-
-            this.ID = ID;
-            this.name = name;
-            this.phone = phone;
-        }
+  
+     
         #endregion
 
         #region Property Methods
@@ -44,6 +39,11 @@ namespace WaiteringSystem
         public void setPhone(string phone)
         {
             this.phone = phone;
+        }
+
+        public override string ToString()
+        {
+            return $"Name: {name}, Phone:{phone}";
         }
         #endregion
 
