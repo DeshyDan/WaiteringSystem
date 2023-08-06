@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="business\Employee.cs" />
+    <Compile Include="business\HeadWaiter.cs" />
+    <Compile Include="business\Role.cs" />
+    <Compile Include="business\Runner.cs" />
+    <Compile Include="business\Waiter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,7 +83,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="business\" />
     <Folder Include="Database\" />
     <Folder Include="presentation\" />
   </ItemGroup>
