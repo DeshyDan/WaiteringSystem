@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace WaiteringSystem.business
 {
-       public  enum RoleType
-    {
-        noRole, Headwaiter,
-        Waiter, Runner
-    }
+    #region Roletype enum
+    public enum RoleType
+         {
+        noRole=0 ,
+        Headwaiter=1,
+        Waiter=2,
+        Runner=3
+          }
+#endregion
     public class Role
     {
-
+        #region Data Members
         private string description;
         private RoleType role;
-
+        #endregion
+        #region Contructors
         public Role()
         {
             role = RoleType.noRole;
@@ -29,13 +34,17 @@ namespace WaiteringSystem.business
             this.role = role;
         }
 
+        #endregion
+        #region Properties
+
         public string getDescription()
         {
             return description;
         }
         public void setDescription(string description) { 
 
-            this.description = description; }
+            this.description = description;
+        }
         public RoleType getRole()
         {
             return role;
@@ -52,6 +61,7 @@ namespace WaiteringSystem.business
         {
             return 0;
         }
+        #endregion
 
     }
 }
